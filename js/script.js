@@ -16,6 +16,7 @@ const percentsTips = document.querySelectorAll(".tip");
 let valuePercent;
 percentsTips.forEach((tip) =>
   tip.addEventListener("click", (event) => {
+    event.preventDefault()
     valuePercent = parseInt(event.currentTarget.getAttribute("value"));
     mostrarCalc(valuePercent, NPerson, valueBill);
   })
