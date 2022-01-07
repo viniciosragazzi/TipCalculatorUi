@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+:root {
+  --main-color: #00474b;
+  --second-color: #27c2ac;
+  --third-color: #d2f0f3;
+  --bg-color: #c4e4e7;
+  --input-bg-color: #f3f8fb;
+  --font-color: #3f6669;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 70%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .title-area {
+  margin-top: 25px;
+}
+.hero .title-area h3 {
+  font-size: 18px;
+  letter-spacing: 8px;
+  color: var(--font-color);
+}
+.hero .calc-area {
+  width: 80%;
+  min-height: 350px;
+  background: white;
+  margin-top: 55px;
+  border-radius: 25px;
+  display: flex;
+}
+.hero .calc-area .area-inputs {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 25px 15px;
+}
+.hero .calc-area .area-inputs form label {
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.hero .calc-area .area-inputs form .input-bill-area {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.hero .calc-area .area-inputs form .input-bill-area p {
+  position: absolute;
+  top: 48px;
+  left: 10px;
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+.hero .calc-area .area-inputs form .input-bill-area input {
+  border: none;
+  background-color: var(--third-color);
+  height: 30px;
+  padding: 5px;
+  padding-right: 15px;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--main-color);
+  width: 90%;
+}
+.hero .calc-area .area-inputs form .input-tip {
+  margin: 15px 0px;
+}
+.hero .calc-area .area-inputs form .input-tip label {
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 4px;
+}
+.hero .calc-area .area-inputs form .input-tip .input-tip-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero .calc-area .area-inputs form .input-tip .input-tip-buttons .tip {
+  width: 47%;
+  height: 30px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  margin: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.hero .calc-area .area-inputs form .input-tip .input-tip-buttons .tip:hover {
+  background: var(--second-color);
+}
+.hero .calc-area .area-inputs form .input-tip .input-tip-buttons .tip, .hero .calc-area .area-inputs form .input-tip .input-tip-buttons #tip-number {
+  width: 47%;
+  height: 30px;
+  border: none;
+  margin: 3px;
+  border-radius: 5px;
+}
+.hero .calc-area .area-inputs form .input-tip .input-tip-buttons #tip-number {
+  background-color: var(--third-color);
+  color: var(--font-color);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.hero .calc-area .area-inputs form .input-nPerson {
+  position: relative;
+}
+.hero .calc-area .area-inputs form .input-nPerson input {
+  border: none;
+  background-color: var(--third-color);
+  height: 30px;
+  padding: 5px;
+  padding-right: 15px;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--main-color);
+  width: 90%;
+}
+.hero .calc-area .area-inputs form .input-nPerson p {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+.hero .calc-area .area-result {
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.hero .calc-area .area-result .results {
+  width: 85%;
+  height: 85%;
+  min-height: 255px;
+  background: var(--main-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero .calc-area .area-result .results .area-results {
+  padding-top: 20px;
+  width: 100%;
+}
+.hero .calc-area .area-result .results .area-results .result-value {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 10px;
+}
+.hero .calc-area .area-result .results .area-results .result-value .desc-result p, .hero .calc-area .area-result .results .area-results .result-value .desc-result span {
+  font-size: 14px;
+}
+.hero .calc-area .area-result .results .area-results .result-value .desc-result p {
+  color: white;
+}
+.hero .calc-area .area-result .results .area-results .result-value .desc-result span {
+  color: var(--bg-color);
+}
+.hero .calc-area .area-result .results .area-results .result-value h3 {
+  color: var(--second-color);
+  font-size: 34px;
+}
+.hero .calc-area .area-result .results button {
+  width: 80%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--second-color);
+  font-weight: 700;
+  color: var(--main-color);
+  border: 2px solid var(--second-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+.hero .calc-area .area-result .results button:hover {
+  color: var(--bg-color);
+  background-color: var(--main-color);
+  border: 2px solid var(--second-color);
+}
+
+@media (max-width: 1118px) {
+  .hero {
+    width: 100%;
+  }
+  .hero .calc-area {
+    width: 85%;
+  }
+}
+@media (max-width: 625px) {
+  .hero {
+    width: 100%;
+  }
+  .hero .calc-area {
+    width: 95%;
+    flex-direction: column;
+    min-height: 670px;
+  }
+  .hero .calc-area .area-result .results {
+    width: 95%;
+  }
+}/*# sourceMappingURL=style.css.map */

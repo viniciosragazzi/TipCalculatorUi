@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="title-area">
+      <h3>SPLI</h3>
+      <h3>TTER</h3>
+    </div>
+    <div class="calc-area">
+
+      <div class="area-inputs">
+        <form action="" method="POST">
+          <div class="input-bill-area">
+            <label for="input-bill">Bill</label>
+            <p>$</p>
+            <input type="text" placeholder="0"  id="input-bill" min="0" >
+          </div>
+
+          <div class="input-tip">
+            <label for="">Select Tip %</label>
+            <div class="input-tip-buttons">
+              <p value="5" class="tip">5%</p>
+              <p value="10" class="tip">10%</p>
+              <p value="15" class="tip">15%</p>
+              <p value="25" class="tip">25%</p>
+              <p value="50" class="tip">50%</p>
+              <input type="number" name="tip-number" placeholder="Custom" id="tip-number" min="0">
+            </div>
+          </div>
+
+          <div class="input-nPerson">
+            <label for="nPerson">Number of People</label>
+            <p><i class="fas fa-user-friends"></i></p>
+            <input type="number" name="nPerson" placeholder="1" id="nPerson" min="1">
+          </div>
+
+        </form>
+      </div>
+
+
+      <div class="area-result">
+        <div class="results">
+          <div class="area-results">
+            <div class="result-value">
+              <div class="desc-result">
+                <p>Tip Amount</p>
+                <span>/ person</span>
+              </div>
+              <h3 class="tip-value">$<span id="value-person">0.00</span></h3>
+            </div>
+            <div class="result-value">
+              <div class="desc-result">
+                <p>Total</p>
+                <span>/ person</span>
+              </div>
+              <h3 class="tip-value">$<span id="value-total">0.00</span></h3>
+            </div>
+          </div>
+          <button class="reset-result">RESET</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+  
