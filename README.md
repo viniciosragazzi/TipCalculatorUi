@@ -1,5 +1,5 @@
 # Frontend Mentor - Tip calculator app
-tip-calculator-app-mocha.vercel.app >>>> Preview
+https://tip-calculator-app-mocha.vercel.app >>>> Preview
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
